@@ -3,6 +3,7 @@
 MVVM (Model-View-ViewModel) mimarisini kullanarak Unity'de basit bir öğe sistemi oluşturmayı gösterir.
 
 **Model 
+
 -**(Item.cs): Öğelerin temel özelliklerini (adı ve gücü) içeren bir sınıfı temsil eder.
 - **ViewModel (ItemViewModel.cs):** Öğelerin yönetildiği yerdir. Yeni öğeler eklemek ve mevcut öğeleri listelemek için kullanılır.
 - **View (ItemView.cs):** Kullanıcı arayüzünü ve etkileşim sağlar. Kullanıcılar yeni öğeler ekleyebilir ve mevcut öğeleri görüntüleyebilirler.

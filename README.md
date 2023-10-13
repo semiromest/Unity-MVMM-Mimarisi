@@ -7,6 +7,8 @@ MVVM (Model-View-ViewModel) mimarisini kullanarak Unity'de basit bir öğe siste
 - **ViewModel (ItemViewModel.cs):** Öğelerin yönetildiği yerdir. Yeni öğeler eklemek ve mevcut öğeleri listelemek için kullanılır.
 - **View (ItemView.cs):** Kullanıcı arayüzünü ve etkileşim sağlar. Kullanıcılar yeni öğeler ekleyebilir ve mevcut öğeleri görüntüleyebilirler.
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 Neden MVMM?
 
 1. Sorumluluk Ayrımı

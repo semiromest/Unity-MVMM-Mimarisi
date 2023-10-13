@@ -6,7 +6,7 @@ using TMPro;
 
 public class ItemView : MonoBehaviour
 {
-    public ItemController itemController;
+    public ItemViewModel itemViewModel;
     public TMP_InputField itemNameInputField;
     public TMP_InputField itemPowerInputField;
     public TextMeshProUGUI itemListViewText;
@@ -23,7 +23,7 @@ public class ItemView : MonoBehaviour
         string name = itemNameInputField.text;
         int power = int.Parse(itemPowerInputField.text);
 
-        itemController.AddItem(name, power);
+        itemViewModel.AddItem(name, power);
         UpdateItemList();
     }
 

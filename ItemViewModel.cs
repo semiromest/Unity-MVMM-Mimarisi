@@ -1,7 +1,7 @@
-using System.Collections.Generic;
+saçusing System.Collections.Generic;
 using UnityEngine;
 
-public class ItemController : MonoBehaviour
+public class ItemViewModel : MonoBehaviour
 {
     public List<Item> items = new List<Item>();
 

@@ -2,9 +2,19 @@
 
 MVVM (Model-View-ViewModel) mimarisini kullanarak Unity'de basit bir öğe sistemi oluşturmayı gösterir.
 
-- **(Item.cs):** Öğelerin temel özelliklerini (adı ve gücü) içeren bir sınıfı temsil eder.
-- **ViewModel (ItemViewModel.cs):** Öğelerin yönetildiği yerdir. Yeni öğeler eklemek ve mevcut öğeleri listelemek için kullanılır.
-- **View (ItemView.cs):** Kullanıcı arayüzünü ve etkileşim sağlar. Kullanıcılar yeni öğeler ekleyebilir ve mevcut öğeleri görüntüleyebilirler.
+Model (Model): Model, uygulamanızın temel veri yapısını ve iş mantığını temsil eder. Model, verileri saklar, işler ve günceller. Örneğin, bir oyun uygulamasında oyuncu karakterlerinin özellikleri, envanter öğeleri ve oyun dünyasının verileri Model tarafından temsil edilir.
+
+View (Görünüm): View, kullanıcı arayüzünü temsil eder. Bu, kullanıcıların uygulamayla etkileşimde bulunduğu alanı içerir. Unity'de bu, sahneler, UI elemanları ve kullanıcı arayüzü tasarımını içerir.
+
+ViewModel (Görünüm Modeli): ViewModel, Model ile View arasındaki arabirimdir. ViewModel, Model'den verileri alır, bunları View için uygun bir şekilde düzenler ve kullanıcı etkileşimlerini işler. ViewModel, genellikle veri bağlama (data binding) ve olayların yönetimi için kullanılır.
+
+MVVM yapısının çalışma mantığı şu şekildedir:
+
+Model, uygulamanın temel verilerini ve iş mantığını içerir. Veriler bu katmanda saklanır ve güncellenir.
+
+View, kullanıcı arayüzünün tasarlandığı yerdir. View, kullanıcı etkileşimlerini algılar ve bu etkileşimleri ViewModel'e iletir.
+
+ViewModel, Model verilerini alır ve bu verileri View tarafından görüntülenmeye uygun bir şekilde hazırlar. ViewModel, View ile Model arasındaki iletişimi kolaylaştırır. Ayrıca, kullanıcı etkileşimlerini dinler, bu etkileşimlere yanıt verir ve Model ile View arasındaki senkronizasyonu sağlar.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
